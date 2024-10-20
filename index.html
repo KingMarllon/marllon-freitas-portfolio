@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Marllon Freitas</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link para o arquivo CSS -->
+    <script src="script.js" defer></script> <!-- Link para o arquivo JavaScript com o atributo defer -->
+
+</head>
+<body>
+    <!-- Cabeçalho com o menu de navegação -->
+    <header>
+        <div class="container">
+            <h1 class="logo">Marllon Freitas</h1> <!-- Coloquei o meu nome em destaque -->
+            <nav>
+                <ul> <!-- Lista de navegação -->
+                   <li><a href="#sobre-mim">Sobre mim</a></li> <!-- Link para a seção "Sobre mim" -->
+                   <li><a href="#formacao">Formação Educacional e Idiomas</a></li> <!-- Link para a seção de formação -->
+                   <li><a href="#portfolio">Portfólio</a></li> <!-- Link para a seção de portfólio -->
+                   <li><a href="#contato">Contato</a></li> <!-- Link para a seção de contato -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Seção "Sobre mim" -->
+    <section id="sobre-mim">
+        <h1>Sobre Mim</h1> <!-- Título da seção -->
+        <p>Olá! Seja muito bem vindo(a) ao meu site, meu nome é Marllon Freitas. Tenho 22 anos e sou estudante de Análise e Desenvolvimento de Sistemas. Além disso, sou formado em design gráfico, pois tenho uma grande paixão por tecnologia e artes. No meu tempo livre, gosto de praticar exercícios físicos, jogar vídeo-game e explorar novas tecnologias.</p>
+    </section>
+    
+    <!-- Seção "Formação Educacional e Idiomas" -->
+    <section id="formacao">
+        <h2>Formação Educacional e Idiomas</h2> <!-- Título da seção -->
+        <p>Atualmente, estou cursando Análise e Desenvolvimento de Sistemas na UNINTER, com previsão de conclusão em setembro de 2025. Possuo formação de nível superior em Design Gráfico pela mesma instituição. Obtive diversos certificados em cursos livres de Design Gráfico. Sou fluente em português e nível intermediário em inglês.</p>
+    </section>
+
+    <!-- Seção "Portfólio" -->
+    <section id="portfolio">
+        <h2>Portfólio</h2> <!-- Título da seção -->
+        <div class="portfolio-item">
+            <a href="imagens/artesupermercado.jpg" target="_blank"> <!-- Link para abrir a imagem em uma nova aba -->
+                <img src="imagens/artesupermercado.jpg" alt="Projeto de estudo sobre uma arte de supermercado">
+            </a>
+            <p>Projeto de estudo sobre uma arte de supermercado</p> <!-- Descrição do projeto -->
+        </div>
+        <div class="portfolio-item">
+            <a href="imagens/artenike.jpg" target="_blank"> <!-- Link para abrir a imagem em uma nova aba -->
+                <img src="imagens/artenike.jpg" alt="Projeto de estudo sobre uma arte da Nike para as redes sociais">
+            </a>
+            <p>Projeto de estudo sobre uma arte da Nike para as redes sociais</p> <!-- Descrição do projeto -->
+        </div>
+        <div class="portfolio-item">
+            <a href="imagens/artelocaliza.jpg" target="_blank"> <!-- Link para abrir a imagem em uma nova aba -->
+                <img src="imagens/artelocaliza.jpg" alt="Projeto de estudo sobre a empresa Localiza com o Jeep Renegade">
+            </a>
+            <p>Projeto de estudo sobre a empresa Localiza com o Jeep Renegade</p> <!-- Descrição do projeto -->
+        </div>
+    </section>
+
+    <!-- Seção "Contato" -->
+    <section id="contato">
+        <h2>Contato</h2> <!-- Título da seção -->
+        <p>Entre em contato comigo preenchendo o formulário abaixo:</p> <!-- Instrução para o formulário -->
+        <form action="#" method="post"> <!-- Formulário para contato -->
+            <label for="nome">Nome:</label> <!-- Rótulo para o campo de nome -->
+            <input type="text" id="nome" name="nome" required> <!-- Campo de texto para o nome -->
+            
+            <label for="email">E-mail:</label> <!-- Rótulo para o campo de e-mail -->
+            <input type="email" id="email" name="email" required> <!-- Campo de texto para o e-mail -->
+            
+            <label for="mensagem">Mensagem:</label> <!-- Rótulo para o campo de mensagem -->
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea> <!-- Área de texto para a mensagem -->
+            
+            <button type="submit">Enviar</button>  <!-- Botão para enviar o formulário -->
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Marllon Freitas. Todos os direitos reservados.</p> <!-- Texto de rodapé -->
+    </footer>
+
+
+</body>
+</html>

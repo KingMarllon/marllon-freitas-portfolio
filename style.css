@@ -1,0 +1,177 @@
+/* Estilos para o corpo do site */
+body {
+    font-family: Arial, sans-serif; /* Define a fonte do texto do site */
+    margin: 1px; /* Margem padrão do corpo */
+    padding: 0; /* Remove o preenchimento do corpo */
+    box-sizing: border-box; /* Inclui preenchimento e borda no cálculo de largura e altura */
+}
+
+/* Estilos para o cabeçalho e navegação */
+header {
+    background-color: #142db6; /* Cor de fundo do cabeçalho */
+    padding: 20px 0; /* Preenchimento superior e inferior do cabeçalho */
+}
+
+.container {
+    display: flex; /* Para organizar os elementos dentro do container */
+    justify-content: space-between; /* Espaça os itens igualmente ao longo do container */
+    align-items: center; /* Alinhamento */
+    max-width: 1200px;  /* Largura máxima do container */ 
+    margin: 0 auto; /* Alinhamento */
+    padding: 0 20px; /* Preenchimento lateral do container */
+}
+
+/* Estilos para o nome (logo) no cabeçalho */
+.logo {
+    font-size: 36px; /* Tamanho da fonte para o logo */
+    font-weight: bold; /* Fonte em negrito */
+    color: #FFD700; /* Cor do texto do logo */
+    margin: 0; /* Remove a margem do logo */
+}
+
+nav ul {
+    list-style: none; /* Remove a marcação padrão da lista */
+    display: flex; /* Para organizar os itens da lista horizontalmente */
+    padding: 0; /* Remove o preenchimento da lista */
+}
+
+nav ul li {
+    margin: 0 15px; /* Margem lateral entre os itens da lista */
+}
+
+nav ul li a {
+    color: white; /* Cor do texto dos links */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    font-weight: bold; /* Estilo da fonte em negrito */
+    font-size: 18px; /* Tamanho da fonte dos links */
+}
+
+nav ul li a:hover {
+    color: #FFD700; /* Cor do texto dos links ao passar o mouse */
+}
+
+/* Estilos para as seções */
+section {
+    padding: 50px; /* Preenchimento interno das seções */
+    text-align: center; /* Alinhamento */
+}
+
+#sobre-mim, #formacao, #portfolio, #contato {
+    background-color: #f4f4f4; /* Cor de fundo das seções */
+    margin-bottom: 20px; /* Margem inferior entre as seções */
+}
+
+h1, h2 {
+    color: #333; /* Cor do texto dos títulos */
+}
+
+p {
+    font-size: 16px; /* Tamanho da fonte dos parágrafos */
+    color: #666; /* Cor do texto dos parágrafos */
+}
+
+/* Estilos para o portfólio */
+#portfolio {
+    display: flex; /* Para organizar os itens do portfólio */
+    flex-wrap: wrap; /* Faz com que os itens se movam para a linha seguinte se não houver espaço */
+    gap: 20px; /* Espaçamento entre os itens do portfólio */
+    margin: 20px 0; /* Margem superior e inferior do portfólio */
+}
+
+.portfolio-item {
+    flex: 1 1 30%; /* Define a base de largura dos itens do portfólio e permite que se ajustem */
+    text-align: center; /* Alinha o texto dos itens do portfólio no centro */
+}
+
+.portfolio-item img {
+    width: 100%; /* Define a largura da imagem para ocupar 100% do seu contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 8px; /* Bordas arredondadas nas imagens */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra leve para as imagens */
+}
+
+
+/* Estilos para o formulário de contato */
+form {
+    max-width: 500px; /* Largura máxima do formulário */
+    margin: 0 auto; /* Centraliza o formulário horizontalmente */
+    background-color: #fff; /* Cor de fundo do formulário */
+    padding: 30px; /* Preenchimento interno do formulário */
+    border-radius: 8px; /* Bordas arredondadas no formulário */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Sombra leve para o formulário */
+    display: flex; /* Para organizar os elementos do formulário */
+    flex-direction: column; /* Organiza os elementos em coluna */
+    align-items: center; /* Alinha os elementos no centro do formulário */
+}
+
+label {
+    display: block; /* Exibe o rótulo como um bloco */
+    margin-bottom: 10px; /* Margem inferior */
+    font-weight: bold; /* Fonte em negrito */
+    color: #333; /* Cor do texto */
+    width: 100%; /* Largura total */
+    text-align: center; /* Alinha o texto no centro */
+}
+
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;  /* Largura total */
+    padding: 12px; /* Preenchimento interno */
+    margin-bottom: 20px; /* Margem inferior */
+    border: 1px solid #ccc; /* Borda padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 16px; /* Tamanho da fonte */
+    background-color: #f9f9f9; /* Cor de fundo */
+    transition: border-color 0.3s ease; /* Transição suave na cor da borda */
+}
+
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+    border-color: #142db6; /* Cor da borda ao focar no campo */
+    outline: none; /* Remove o contorno padrão ao focar */
+}
+
+textarea {
+    height: 150px; /* Altura da área de texto */
+    resize: vertical; /* Permite redimensionar a área de texto verticalmente */
+}
+
+button {
+    width: 100%; /* Largura total */
+    padding: 15px; /* Preenchimento interno */
+    background-color: #333; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    font-size: 16px; /* Tamanho da fonte */
+    font-weight: bold; /* Fonte em negrito */
+    border: none; /* Remove a borda padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Muda o cursor ao passar o mouse sobre o botão */
+    transition: background-color 0.3s ease; /* Transição suave na cor de fundo do botão */
+}
+
+button:hover {
+    background-color: #142db6; /* Cor do botão ao passar o mouse */
+}
+
+
+
+/* Estilos para o rodapé */
+footer {
+    background-color: #333;  /* Cor de fundo */
+    color: white; /* Cor do texto */
+    text-align: center;  /* Alinha o texto no centro */
+    padding: 10px 0; /* Preenchimento superior e inferior */
+    position: relative; /* Posiciona o rodapé relativamente */
+    bottom: 0; /* Alinha o rodapé ao fundo do contêiner */
+    width: 100%; /* Largura total */
+}
+
+/* Estilo responsivo para telas menores */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column; /* Organiza a lista de navegação em coluna em telas pequenas */
+    }
+
+    form {
+        width: 90%; /* Largura do formulário em telas pequenas */
+    }
+}
